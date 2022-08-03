@@ -16,6 +16,7 @@ echo "Installing dependencies with Homebrew"
 brew install \
      autoconf \
      bison \
+     curl \
      gcc \
      libdv \
      libiconv \

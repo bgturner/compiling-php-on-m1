@@ -13,6 +13,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --disable-all \
     --enable-exif \
     --enable-option-checking=fatal \
+    --with-curl=$(brew --prefix curl) \
     --with-iconv=$(brew --prefix libiconv)
   
 
