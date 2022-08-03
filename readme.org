@@ -1,0 +1,3 @@
+* PHP from Source
+
+A sandbox repo to better understand how to compile PHP from source, under MacOS.
