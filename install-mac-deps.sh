@@ -14,11 +14,11 @@ homebrew_m1_location="/opt/homebrew"
 echo "Installing dependencies with Homebrew"
 # TODO: Install compiling deps
 brew install \
-     gcc \
-     libdv \
      autoconf \
      bison \
-     re2c \
-     make
+     gcc \
+     libdv \
+     make \
+     re2c
 
 
