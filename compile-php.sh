@@ -10,6 +10,7 @@ fi
 mkdir -p $BUILD_DIR && cd $BUILD_DIR
 
 ./configure \
+    --disable-all \
     --enable-option-checking=fatal \
     --with-iconv=$(brew --prefix libiconv)
   
