@@ -1,18 +1,10 @@
+all: php-7.4.30
 
-all: build/buildconf
+php-7.4.30: php-7.4.30.tar.gz
+	tar xzf php-7.4.30.tar.gz
 
-build/buildconf: build
-	touch build/buildconf
-	build/php-src-master/buildconf
-
-# Need to use ditto to overcome encoding issues when unzipping under MacOS
-build: php.zip
-	ditto -x -k --sequesterRsrc --rsrc php.zip build
-
-php.zip:
-	curl -L https://github.com/php/php-src/archive/refs/heads/master.zip -o php.zip
+php-7.4.30.tar.gz:
+	curl -L https://www.php.net/distributions/php-7.4.30.tar.gz -o php-7.4.30.tar.gz
 
 clean:
-	rm -rf build
-	rm -rf php-src-master
-	rm php.zip
+	rm -rf php-*

@@ -4,7 +4,7 @@
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
 if [ "$BUILD_DIR" == "" ]; then
-    BUILD_DIR="$(pwd)/build/php-src-master"
+    BUILD_DIR="$(pwd)/php-7.4.30"
 fi
 
 mkdir -p $BUILD_DIR && cd $BUILD_DIR
