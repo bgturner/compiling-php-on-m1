@@ -14,6 +14,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --enable-exif \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
+    --with-sodium \
     --with-iconv=$(brew --prefix libiconv)
   
 
