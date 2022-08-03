@@ -9,6 +9,7 @@ fi
 
 mkdir -p $BUILD_DIR && cd $BUILD_DIR
 
-./configure --disable-all
+./configure \
+  --enable-option-checking=fatal
 
 make -j $(nproc)
