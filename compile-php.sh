@@ -10,6 +10,8 @@ fi
 mkdir -p $BUILD_DIR && cd $BUILD_DIR
 
 ./configure \
-  --enable-option-checking=fatal
+    --enable-option-checking=fatal \
+    --with-iconv=$(brew --prefix libiconv)
+  
 
 make -j $(nproc)

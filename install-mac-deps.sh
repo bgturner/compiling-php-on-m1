@@ -18,6 +18,7 @@ brew install \
      bison \
      gcc \
      libdv \
+     libiconv \
      make \
      re2c
 
