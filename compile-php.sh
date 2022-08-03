@@ -11,6 +11,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
 
 ./configure \
     --disable-all \
+    --enable-exif \
     --enable-option-checking=fatal \
     --with-iconv=$(brew --prefix libiconv)
   
