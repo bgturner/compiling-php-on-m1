@@ -15,6 +15,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --enable-bcmath \
     --enable-exif \
     --enable-fileinfo \
+    --enable-filter \
     --enable-dom \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
