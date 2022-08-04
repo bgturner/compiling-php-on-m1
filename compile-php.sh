@@ -26,7 +26,8 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --with-curl=$(brew --prefix curl) \
     --with-sodium \
     --with-libxml \
-    --with-iconv=$(brew --prefix libiconv)
+    --with-iconv=$(brew --prefix libiconv) \
+    --with-zip
   
 
 make -j $(nproc)
