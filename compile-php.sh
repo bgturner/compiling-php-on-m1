@@ -27,7 +27,9 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --with-sodium \
     --with-libxml \
     --with-iconv=$(brew --prefix libiconv) \
-    --with-zip
+    --with-zip \
+    --with-zlib
+
   
 
 make -j $(nproc)
