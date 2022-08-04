@@ -21,6 +21,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --with-mysqli \
     --enable-simplexml \
     --enable-xml \
+    --enable-xmlreader \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
     --with-sodium \
