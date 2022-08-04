@@ -18,6 +18,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --enable-filter \
     --enable-dom \
     --enable-json \
+    --with-mysqli \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
     --with-sodium \
