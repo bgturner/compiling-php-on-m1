@@ -12,6 +12,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
 ./configure \
     --prefix=/opt/lightning-services/php-7.4.30 \
     --disable-all \
+    --enable-bcmath \
     --enable-exif \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
