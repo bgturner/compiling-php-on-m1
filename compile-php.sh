@@ -14,9 +14,11 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --disable-all \
     --enable-bcmath \
     --enable-exif \
+    --enable-dom \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
     --with-sodium \
+    --with-libxml \
     --with-iconv=$(brew --prefix libiconv)
   
 
