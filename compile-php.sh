@@ -20,6 +20,7 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
     --enable-json \
     --with-mysqli \
     --enable-simplexml \
+    --enable-xml \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
     --with-sodium \
