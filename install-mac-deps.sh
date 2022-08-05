@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Xcode is required by Homebrew
+# Xcode is required by Homebrew and is basically the same as build-essentials in Linux
 echo "Checking Xcode installation location:"
 xcode-select -p || xcode-select --install
 
