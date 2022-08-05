@@ -5,7 +5,8 @@ export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
 # add openssl
 openssl_path=$(brew --prefix openssl@1.1)
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${openssl_path}/lib/pkgconfig"
+oniguruma_path=$(brew --prefix oniguruma)
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${oniguruma_path}/lib/pkgconfig:${openssl_path}/lib/pkgconfig"
 
 if [ "$BUILD_DIR" == "" ]; then
     BUILD_DIR="$(pwd)/php-7.4.30"
@@ -22,6 +23,8 @@ make clean
     --enable-fileinfo \
     --enable-filter \
     --enable-json \
+    --enable-mbregex \
+    --enable-mbstring \
     --enable-option-checking=fatal \
     --enable-simplexml \
     --enable-xml \

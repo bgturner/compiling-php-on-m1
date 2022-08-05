@@ -21,6 +21,7 @@ brew install \
      libdv \
      libiconv \
      make \
+     oniguruma \
      openssl@1.1 \
      re2c
 
