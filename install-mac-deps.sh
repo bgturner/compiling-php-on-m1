@@ -23,6 +23,7 @@ brew install \
      make \
      oniguruma \
      openssl@1.1 \
+     pcre2 \
      re2c
 
 
