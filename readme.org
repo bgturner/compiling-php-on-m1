@@ -6,3 +6,25 @@ A sandbox repo to better understand how to compile PHP from source, under MacOS.
 
   WordPress [[https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions][recommendeds these PHP extensions]]. Most of the items on the list compiled with not much work. These remaining extensions might be easy, but there's at least a few things that make me unsure of if they have been compiled and configured correctly.
 
+* Getting Started
+
+  For now, this is focused on compiling PHP 7.4.30 and will install php to =/opt/lightning-services/php-7.4.30=.
+
+  The general flow is to:
+  1. Clone this site
+  2. Install build dependencies via Homebrew with =install-mac-deps.sh=
+  3. Run =make= to download and extract the =7.4.30= source
+  4. Configure and compile php with =compile-php.sh=
+  5. Install with =make install=
+
+
+  That process should look something like this within the terminal:
+
+  #+begin_src shell
+    mkdir -p ~/src && cd ~/src
+    git clone git@github.com:bgturner/compiling-php-on-m1.git && cd compiling-php-on-m1
+    ./install-mac-deps.sh
+    make
+    ./compile-php.sh
+    cd php-7.4.30 && make install
+  #+end_src
