@@ -22,6 +22,7 @@ make clean
     --enable-exif \
     --enable-fileinfo \
     --enable-filter \
+    --enable-intl \
     --enable-json \
     --enable-mbregex \
     --enable-mbstring \
