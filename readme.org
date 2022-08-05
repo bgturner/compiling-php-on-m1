@@ -1,3 +1,8 @@
 * PHP from Source
 
 A sandbox repo to better understand how to compile PHP from source, under MacOS.
+
+* WordPress Recommended Extensions
+
+  WordPress [[https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions][recommendeds these PHP extensions]]. Most of the items on the list compiled with not much work. These remaining extensions might be easy, but there's at least a few things that make me unsure of if they have been compiled and configured correctly.
+
