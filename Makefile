@@ -1,10 +1,15 @@
-all: php-7.4.30
+all: /opt/lightning-services/php-7.4.30
 
-php-7.4.30: php-7.4.30.tar.gz
-	tar xzf php-7.4.30.tar.gz
+/opt/lightning-services/php-7.4.30: build/php-7.4.30
+	./compile-php.sh 7.4.30 && cd build/php-7.4.30 && make install
 
-php-7.4.30.tar.gz:
-	curl -L https://www.php.net/distributions/php-7.4.30.tar.gz -o php-7.4.30.tar.gz
+build/php-7.4.30: build/php-7.4.30.tar.gz
+	cd build && tar xzf php-7.4.30.tar.gz
+
+build/php-7.4.30.tar.gz:
+	mkdir -p build
+	curl -L https://www.php.net/distributions/php-7.4.30.tar.gz -o build/php-7.4.30.tar.gz
 
 clean:
 	rm -rf php-*
+	rm -rf /opt/lightning-services/php-*
