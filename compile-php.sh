@@ -30,6 +30,7 @@ make clean
     --enable-xmlreader \
     --enable-option-checking=fatal \
     --with-curl=$(brew --prefix curl) \
+    --with-external-pcre=$(brew --prefix pcre2) \
     --with-sodium \
     --with-libxml \
     --with-openssl-dir="${openssl_path}/bin" \
