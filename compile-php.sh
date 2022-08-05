@@ -16,26 +16,26 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
 make clean
 
 ./configure \
-    --prefix=/opt/lightning-services/php-7.4.30 \
     --disable-all \
     --enable-bcmath \
+    --enable-dom \
     --enable-exif \
     --enable-fileinfo \
     --enable-filter \
-    --enable-dom \
     --enable-json \
-    --with-mysqli \
+    --enable-option-checking=fatal \
     --enable-simplexml \
     --enable-xml \
     --enable-xmlreader \
-    --enable-option-checking=fatal \
+    --prefix=/opt/lightning-services/php-7.4.30 \
     --with-curl=$(brew --prefix curl) \
     --with-external-pcre=$(brew --prefix pcre2) \
-    --with-sodium \
+    --with-iconv=$(brew --prefix libiconv) \
     --with-libxml \
+    --with-mysqli \
     --with-openssl-dir="${openssl_path}/bin" \
     --with-openssl="${openssl_path}/bin"  \
-    --with-iconv=$(brew --prefix libiconv) \
+    --with-sodium \
     --with-zip \
     --with-zlib
 
