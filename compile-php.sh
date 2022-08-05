@@ -13,6 +13,8 @@ fi
 
 mkdir -p $BUILD_DIR && cd $BUILD_DIR
 
+make clean
+
 ./configure \
     --prefix=/opt/lightning-services/php-7.4.30 \
     --disable-all \
