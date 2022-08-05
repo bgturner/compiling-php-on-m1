@@ -16,7 +16,6 @@ mkdir -p $BUILD_DIR && cd $BUILD_DIR
 make clean
 
 ./configure \
-    --disable-all \
     --enable-bcmath \
     --enable-dom \
     --enable-exif \
