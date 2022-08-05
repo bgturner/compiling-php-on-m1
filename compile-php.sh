@@ -23,6 +23,7 @@ make clean
     --enable-exif \
     --enable-fileinfo \
     --enable-filter \
+    --enable-fpm \
     --enable-intl \
     --enable-json \
     --enable-mbregex \
